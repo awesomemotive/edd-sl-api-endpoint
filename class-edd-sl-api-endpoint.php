@@ -50,7 +50,8 @@ if( stristr( $_SERVER['REQUEST_URI'], '/edd-sl-api' ) !== false ) {
 			$active_plugins = array(
 				//'blackbox-debug-bar/index.php',
 				'easy-digital-downloads/easy-digital-downloads.php',
-				'edd-software-licensing/edd-software-licenses.php'
+				'edd-software-licensing/edd-software-licenses.php',
+				'edd-sl-variable-price-limits/edd-sl-variable-price-limits.php'
 			);
 
 			return $active_plugins;
