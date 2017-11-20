@@ -51,6 +51,7 @@ if( stristr( $_SERVER['REQUEST_URI'], '/edd-sl-api' ) !== false ) {
 				//'blackbox-debug-bar/index.php',
 				'easy-digital-downloads/easy-digital-downloads.php',
 				'edd-software-licensing/edd-software-licenses.php',
+				'edd-all-access/edd-all-access.php',
 				'edd-sl-variable-price-limits/edd-sl-variable-price-limits.php'
 			);
 
