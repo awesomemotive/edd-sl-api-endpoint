@@ -19,8 +19,10 @@ if( stristr( $_SERVER['REQUEST_URI'], '/edd-sl-api' ) !== false ) {
 			// disable cronjobs for this request
 			define('DISABLE_WP_CRON', true);
 
-			// prevent session query caused by EDD
-			define( 'EDD_USE_PHP_SESSIONS', true );
+			// prevent session query caused by EDD if not set already
+			if( ! defined( 'EDD_USE_PHP_SESSIONS' ) ) {
+				define( 'EDD_USE_PHP_SESSIONS', true );
+			}
 
 			// filter active plugins
 			add_filter( 'option_active_plugins', array( $this, 'filter_active_plugins' ) );
