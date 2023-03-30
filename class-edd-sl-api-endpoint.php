@@ -51,6 +51,7 @@ if( stristr( $_SERVER['REQUEST_URI'], '/edd-sl-api' ) !== false ) {
 		public function filter_active_plugins( $active_plugins ) {
 			$active_plugins = array(
 				//'blackbox-debug-bar/index.php',
+				'easy-digital-downloads-pro/easy-digital-downloads.php',
 				'easy-digital-downloads/easy-digital-downloads.php',
 				'edd-software-licensing/edd-software-licenses.php',
 				'edd-all-access/edd-all-access.php',
